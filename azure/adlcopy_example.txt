@@ -1,0 +1,6 @@
+
+
+./AdlCopy /Source adl://ds20dna100a.azuredatalakestore.net/Raw/Sources/Harp/In/* /Dest adl://ds20dna100a.azuredatalakestore.net/Raw/Sources/Harp/Parkeren/20190515
+
+
+

@@ -1,0 +1,11 @@
+$sql = "select * from dezetabelbestaatniet"
+$server = "sw20dwh100a.database.windows.net"
+$database = "EDW"
+$username = "DNAadmin"
+$password = "gbCwTNdRYnqUSJDVMgfZMtG5"
+try {
+    Invoke-Sqlcmd -Query $sql -ServerInstance $server -database $database -QueryTimeout 65535 -ErrorAction 'Stop' -username $username -password $password
+} catch {
+  "error when running sql $sql"
+  Write-Host($error)
+}
